@@ -25,7 +25,7 @@ def read_csv(files: list[str]) -> list[list[str]]:
 
     for file in files:
         if not file.lower().endswith(".csv"):
-                    continue
+            continue
 
         with open(file, "r") as f:
             reader = csv.reader(f)
